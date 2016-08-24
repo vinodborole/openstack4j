@@ -22,7 +22,7 @@ OpenStack4j is a fluent OpenStack client that allows provisioning and control of
 
 ## Requirements
 
-* OpenStack4j 3.0.X - Java 8
+* OpenStack4j 3.0.X - Java 7 (JDK 8 preferred)
 * OpenStack4j 2.0.X - Java 7
 
 Maven
@@ -39,7 +39,7 @@ OpenStack4j version 2.0.0+ is now modular.  One of the benefits to this is the a
 <dependency>
     <groupId>org.pacesys</groupId>
     <artifactId>openstack4j</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.2</version>
 </dependency>
 ```
 
@@ -55,13 +55,15 @@ See notes above about connectors (same rules apply) to development branches.
 <dependency>
     <groupId>org.pacesys</groupId>
     <artifactId>openstack4j</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.0.3-SNAPSHOT</version>
 </dependency>
 ```
 
 **A note about referencing Snapshots without Source**
 
-Snapshots are deploys to sonatype.  You will need to add the repository to your POM or Settings file.  Releases (above) are deployed to maven central and this step is not required.
+Snapshots are deploys to sonatype.  We automatically deploy snapshots on every merge into the master branch.  Typically 5 - 10 snapshot releases before an official release.
+
+You will need to add the repository to your POM or Settings file.  Releases (above) are deployed to maven central and this step is not required.
 
 Example POM based repository declaration to grab snapshots:
 ```xml
